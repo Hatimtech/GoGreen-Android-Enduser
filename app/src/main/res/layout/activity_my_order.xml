@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Screens.MyOrderActivity">
+
+    <include layout="@layout/common_toolbar_with_no_back_button" />
+
+    <RelativeLayout
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+
+
+            android:orientation="horizontal"
+            android:padding="3dp">
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/active_layout"
+                android:layout_width="120dp"
+                android:layout_height="52dp"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/myorderdrawlablegreen"
+                android:elevation="5dp"
+                android:gravity="center">
+
+                <TextView
+
+                    android:id="@+id/active"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Active"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/Size3" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/expired_layout"
+                android:layout_width="120dp"
+                android:layout_height="52dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/myorderdrawale"
+                android:elevation="5dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/expired"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Expired"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/Size3" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+
+</LinearLayout>

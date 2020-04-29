@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textcolor"
+        fontPath="fonts/Montserrat_Regular.otf"
+        android:text="Relax,and Leave the dirty work to us"
+        android:textSize="@dimen/Size5"/>
+
+
+
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_250sdp"
+        android:src="@mipmap/relax"
+
+        />
+
+    <TextView
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textcolor"
+        android:text="Our team arrives fully-equipped on site  with everything they need"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="@dimen/Size3"/>
+</LinearLayout>

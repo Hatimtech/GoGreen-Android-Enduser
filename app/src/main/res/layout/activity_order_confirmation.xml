@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Screens.OrderConfirmationActivity">
+
+    <include layout="@layout/common_toolbar" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/confirmation_list"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/layoutcoupon"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="55dp">
+
+    </android.support.v7.widget.RecyclerView>
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/layoutcoupon"
+        android:layout_above="@+id/confirm_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="@android:color/transparent"
+            android:id="@+id/have_coupon_layout"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp">
+            <TextView
+                android:id="@+id/have_coupon"
+                android:padding="7dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/Size4"
+                fontPath="fonts/Montserrat_Regular.otf"
+                android:text="@string/have_coupon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:id="@+id/price_layout"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+
+                    android:padding="3dp"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/Size3"
+                    android:text="@string/total_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/totalAmt"
+                    android:layout_alignParentEnd="true"
+                    android:padding="3dp"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/Size3"
+                    android:text=" "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <View
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:background="@color/textcolor"
+                android:layout_width="match_parent"
+                android:layout_height=".5dp">
+
+            </View>
+            <RelativeLayout
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+
+                        android:padding="3dp"
+                        android:textColor="@color/textcolor"
+                        android:textSize="@dimen/Size3"
+                        android:text="@string/cpnCode1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+
+                        android:id="@+id/coupon_detail"
+                        android:padding="3dp"
+                        android:textColor="@color/textcolor"
+                        android:textSize="@dimen/Size3"
+                        android:text=" "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:layout_marginStart="5dp"
+                        android:id="@+id/cancle_button"
+                        android:padding="9dp"
+                        android:src="@drawable/cancle_image"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/discount"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:padding="3dp"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/Size3"
+                    android:text=" "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/confirm_order"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:paddingLeft="80dp"
+            android:gravity="center"
+            android:paddingRight="80dp"
+            android:id="@+id/proceed"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/proceed1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/Size4" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:gravity="center"
+           android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="@string/total_amount"
+                android:textColor="@color/white"
+                android:textSize="@dimen/Size3" />
+            <LinearLayout
+                android:gravity="center"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@mipmap/ade_currency_white_icon"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp" />
+                <TextView
+                    android:layout_marginStart="4dp"
+                    android:id="@+id/money"
+                    fontPath="fonts/Montserrat_Regular.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rupee"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/Size3" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

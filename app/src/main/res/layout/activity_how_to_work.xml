@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Screens.HowItWorkActivity">
+
+    <include layout="@layout/common_toolbar_with_no_back_button" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="70dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/one"
+                android:src="@mipmap/first_circle"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+            <View
+                android:layout_marginStart="20dp"
+                android:layout_below="@+id/one"
+                android:layout_width="1dp"
+                android:background="@color/viewcolor"
+                android:layout_height="wrap_content">
+
+            </View>
+            <LinearLayout
+                android:id="@+id/AddCity"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginEnd="10dp"
+                android:elevation="3dp"
+                android:background="@drawable/how_it_work"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:src="@mipmap/locality_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="40dp"
+                    android:text="@string/aelect_locality"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/Size3" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/two"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/second_circle" />
+            <View
+                android:layout_marginStart="20dp"
+                android:layout_below="@+id/two"
+                android:layout_width="1dp"
+                android:background="@color/viewcolor"
+                android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="15dp"
+            android:elevation="3dp"
+            android:background="@drawable/how_it_work_disable"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:src="@mipmap/car_model_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="40dp"
+
+                android:text="@string/select_car"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/Size3" />
+
+        </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/three"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/third_circle" />
+            <View
+                android:layout_marginStart="20dp"
+                android:layout_below="@+id/three"
+                android:layout_width="1dp"
+                android:background="@color/viewcolor"
+                android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="15dp"
+            android:elevation="3dp"
+            android:background="@drawable/how_it_work_disable"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:src="@mipmap/choose_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="40dp"
+                android:text="@string/Choose_package"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/Size3" />
+
+        </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        <ImageView
+            android:id="@+id/four"
+            android:src="@mipmap/fourth_circle"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+            <View
+                android:layout_marginStart="20dp"
+                android:layout_below="@+id/four"
+                android:layout_width="1dp"
+                android:background="@color/viewcolor"
+                android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="10dp"
+            android:elevation="3dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/how_it_work_disable"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="6dp"
+            >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:src="@mipmap/payment_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="40dp"
+                android:text="@string/make_payment"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/Size3" />
+
+        </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        <ImageView
+            android:id="@+id/five"
+            android:src="@mipmap/fiveth_circle"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <LinearLayout
+            android:layout_marginBottom="15dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="10dp"
+            android:elevation="3dp"
+            android:background="@drawable/how_it_work_disable"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="6dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:src="@mipmap/confirm_order" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="40dp"
+                android:text="@string/Confirm_order"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/Size3" />
+
+        </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/subscribe"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/custombutton_1"
+        android:text="@string/subscribe"
+        android:textColor="@color/white"
+        android:textSize="@dimen/Size4" />
+
+
+</RelativeLayout>

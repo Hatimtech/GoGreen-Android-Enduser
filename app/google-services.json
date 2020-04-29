@@ -1,0 +1,52 @@
+{
+  "project_info": {
+    "project_number": "793829362131",
+    "firebase_url": "https://gogreen-b4fad.firebaseio.com",
+    "project_id": "gogreen-b4fad",
+    "storage_bucket": "gogreen-b4fad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:793829362131:android:7a61abe307f4527f",
+        "android_client_info": {
+          "package_name": "com.gogreen.main"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "793829362131-2o18iosbadhqun0c4ddmtq9islru5goo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gogreen.main",
+            "certificate_hash": "b62e9746fb46de15e7cdb08a955b8de4b5190f19"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgU3L1PBratfA_NRoWQRuGy8vpIPxE92w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "793829362131-lk6c4f4celvn6ng1rn3988rbor7t76fu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "793829362131-avbmfi79aavh0qoji79ftsvcq020pea5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ripen.gogreen",
+                "app_store_id": "1440585352"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

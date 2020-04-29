@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Screens.EnterCarDetailActivity">
+
+    <include layout="@layout/common_toolbar" />
+
+    <ImageView
+        android:id="@+id/car_Icon"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="3.9"
+        android:padding="20dp"
+        android:src="@mipmap/suv_image" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="25dp"
+
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="12dp"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/_115sdp"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/car_brand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end">
+
+            </Spinner>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/viewcolor" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="@dimen/_115sdp"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/car_model"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="2dp">
+
+            </Spinner>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/viewcolor" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="12dp"
+        android:layout_weight="2.15"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_type"
+            android:textColor="@color/textcolor"
+            android:textSize="15dp" />
+
+        <RadioGroup
+            android:layout_marginBottom="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+
+
+            <RadioButton
+                android:checked="true"
+                android:id="@+id/suv"
+                android:onClick="onRadioButtonClicked"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/suv"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/Size2" />
+
+
+            <RadioButton
+                android:layout_gravity="center"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/saloon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="90dp"
+                android:padding="2dp" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Saloon"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/Size2" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="12dp"
+        android:layout_weight="1.7"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/color_icon"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:src="@mipmap/color_icon" />
+
+            <Spinner
+
+                android:id="@+id/color"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:layout_marginEnd="1dp"
+                android:drawSelectorOnTop="true"
+                android:popupBackground="#fff"
+                android:spinnerMode="dropdown">
+
+            </Spinner>
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/viewcolor" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="12dp"
+        android:layout_weight="2.3"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/email_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:src="@mipmap/car_palte_number" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/car_plate_number"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/Size2" />
+
+                <EditText
+
+                    android:id="@+id/plate_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/ENTER_CAR_PLATE_NUMBER"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+                    android:maxLines="1"
+                    android:maxLength="10"
+                    android:inputType="textCapCharacters"
+                    android:imeOptions="actionNext"
+                    android:textColor="@color/textcolor"
+                    android:singleLine="true"
+                    android:textColorHint="@color/textcolor"
+                    android:textSize="@dimen/Size3" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/email_layout"
+            android:layout_marginTop="8dp"
+            android:background="@color/viewcolor" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="2.1"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/email_layou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:src="@mipmap/car_parking_number" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/parking_Bay_number"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/Size2" />
+
+                <EditText
+                    android:id="@+id/parking_bay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/enter_parking_bay"
+                    android:imeOptions="actionDone"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+                    android:inputType="textCapWords"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/textcolor"
+                    android:textSize="@dimen/Size3" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/email_layou"
+            android:layout_marginTop="8dp"
+            android:background="@color/viewcolor" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/autoRenewals"
+        android:paddingRight="3dp"
+        android:paddingLeft="3dp"
+        android:layout_marginStart="15dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/autoRenewalsImg"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:src="@mipmap/unselect_check_box_icon" />
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginStart="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Keep Auto-Renewal ON"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/Size3" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="15dp"
+        android:id="@+id/user_proceed"
+        android:layout_width="@dimen/_175sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/custom_button"
+        android:text="@string/proceed"
+        android:textColor="@color/white"
+        android:textSize="@dimen/Size4" />
+
+
+</LinearLayout>
